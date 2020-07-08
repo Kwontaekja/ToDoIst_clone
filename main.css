@@ -1,13 +1,23 @@
 body {
-  background-color: #00b894;
+  background-color: #74b9ff;
 }
 
-h1 {
-  color: #d63031;
+.main_greeting {
+  color: #0984e3;
   transition: color 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 /* class명에 해당 클래스가 추가되어있는 경우 css style로 지정가능 */
 .clicked {
-  color: #0984e3;
+  color: #6c5ce7;
+}
+
+.greeting,
+.clock {
+  text-align: center;
+}
+
+.clock {
+  color: #2d3436;
 }
