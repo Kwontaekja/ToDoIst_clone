@@ -1,8 +1,13 @@
+body {
+  background-color: #00b894;
+}
+
 h1 {
-  color: "#d63031";
+  color: #d63031;
   transition: color 0.5s ease-in-out;
 }
 
+/* class명에 해당 클래스가 추가되어있는 경우 css style로 지정가능 */
 .clicked {
-  color: "#0984e3";
+  color: #0984e3;
 }
