@@ -24,13 +24,15 @@ function remove_toDo(event) {
 
 function add_toDo() {
   event.preventDefault();
-  arr_toDo[idx] = input_toDo.value;
-  localStorage.setItem(toDoList_key, JSON.stringify(arr_toDo));
-  //입력창 비우기
-  input_toDo.value = "";
-  idx++;
+  if (input_toDo.value !== "") {
+    arr_toDo[idx] = input_toDo.value;
+    localStorage.setItem(toDoList_key, JSON.stringify(arr_toDo));
+    //입력창 비우기
+    input_toDo.value = "";
+    idx++;
 
-  show_toDo();
+    show_toDo();
+  }
 }
 
 function show_toDo() {
