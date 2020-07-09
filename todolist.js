@@ -15,9 +15,9 @@ function remove_toDo(event) {
   //   arr_toDo.remove(li.querySelector("span").innerText);
   let index = arr_toDo.indexOf(li.querySelector("span").innerText);
   arr_toDo.splice(index, 1);
-  arr_toDo.filter(function (el) {
-    return el !== null;
-  });
+  // arr_toDo.filter(function (el) {
+  //   return el !== null;
+  // });
 
   idx--;
 }
