@@ -16,7 +16,7 @@
       </div>
       <form class="name">
         <input
-          class="inputName"
+          class="input inputName"
           name="name"
           type="text"
           placeholder="What is your name?"
@@ -25,10 +25,23 @@
       <div class="user_form">
         <h1 class="user"></h1>
       </div>
+      <!-- 안보이는 애들 & display: none;인 경우 height=0으로 잡혀있다 -->
+      <form class="form_toDo">
+        <input
+          class="input input_toDo"
+          name="name_toDo"
+          type="text"
+          placeholder="What to do?"
+        />
+      </form>
+      <div class="div_list">
+        <ul class="list_toDo"></ul>
+      </div>
     </div>
 
     <script src="main.js"></script>
     <script src="clock.js"></script>
     <script src="name.js"></script>
+    <script src="todolist.js"></script>
   </body>
 </html>
